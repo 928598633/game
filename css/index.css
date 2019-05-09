@@ -1,0 +1,439 @@
+
+
+.box{
+    width: 100%;
+    height: 100%;
+}
+/* video部分 */
+.video{
+width: 100%;
+height: 600px;
+position: relative;
+box-sizing: border-box;
+}
+.video>.mydiv{
+    position: absolute;
+    display: block;
+    height: 100%;
+    min-width: 100%;
+    z-index: 1; 
+    overflow: hidden;
+    top: 0; 
+}
+.video>.mydiv>video{
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+/* video游戏介绍部分 */
+.video .video_content{
+    width: 440px;
+    height: 170px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    margin-left: -220px;
+    top: 350px;
+}
+.video .video_content .content_img{
+    width: 350px;
+    height: 77.78px;
+    margin: auto;
+    margin-bottom: 14px;
+}
+.video .video_content .content_img img{
+    width: 100%;
+    height: 100%;
+}
+.video .video_content .content_button{
+    width: 350px;
+    height: 77.78px;
+    margin: auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.video .video_content .content_button div{
+    width: 156px;
+    height: 42px;
+    background-color: #fff;
+    margin-top: 19px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 900;
+}
+.video .content_button a .left{
+    background-color: #00A5E2;
+}
+.video .content_button a .left:hover{
+     background-color: #0CBDFF;
+}
+.video .content_button a .right{
+    background-color: #FF9C00;
+}
+.video .content_button a .right:hover{
+    background-color: #FFB033;
+}
+/* 新闻公告部分 */
+
+.inner{
+    width: 100%;
+    height: 450px;
+    background-color:#f6f6f6 ;
+}
+
+.inner .inner_journalism{
+    width: 1190px;
+    height: 100%;
+
+    margin: auto;
+    overflow: hidden;
+}
+.inner .inner_journalism .H{
+    width: 100%;
+    height: 80px;
+
+    margin: 40px 0;
+    text-align: center;
+    line-height: 80px;
+    font-size: 48px;
+    color: #333
+}
+
+.inner .inner_journalism .container{
+    width: 100%;
+    height: 205px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inner .container .c>div{
+    width: 370px;
+    height: 205px;
+}
+.inner .container .c1{
+    background-image: url('../img/c1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.inner .container .c2{
+    background-image: url('../img/c2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.inner .container .c3{
+    background-image: url('../img/c3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.inner .container .conter{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(000, 000, 000,0.6);
+    margin-top: 150px;
+}
+.inner .conter>h3{
+    color: #fff;
+    text-align: center;
+    line-height: 55px;
+}
+.inner .inner_botton{
+    width: 259px;
+    height: 41px;
+    background-color: #00A5E2;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 14px;
+    text-align: center;
+    line-height: 41px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.inner .inner_botton:hover{
+    background-color: #0CBDFF;
+}
+
+
+
+/* 活动详情 */
+.contest{
+    width: 100%;
+    height: 441px;
+    background-image: url('../img/in1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+.contest .contest_cont{
+    width: 759.6px;
+    height: 227.8px;
+    position: absolute;
+    top: 50%;
+    margin-top: -58.9px;
+}
+.contest .contest_cont header{
+    width: 585px;
+    height: 123px;
+    float: right;
+}
+.contest .contest_cont header h2{
+    font-size: 48px;
+    color: rgb(84, 88, 99);
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+.contest .contest_cont header p{
+    font-size: 24px;
+    color: rgb(78, 100, 149);
+    text-align: right;
+    
+}
+.contest .p_cont{
+    max-width: 32em;
+    float: right;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+    text-indent: 4em;
+    
+   
+}
+.contest .p_button{
+    width: 189px;
+    height: 38px;
+    float: right;
+    background-color: #FF9C00;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.contest .p_button:hover{
+    background-color: #FFB033;
+}
+/* 英雄人物部分 */
+.role{
+    width: 100%;
+    height: 1122px;
+    overflow: hidden;
+    background-image: url('../img/role_background.jpg');
+    background-repeat: no-repeat;
+}
+/* 英雄 特色 */
+.role .suggest{
+    width: 1190px;
+    height: 197.6px;
+    margin:auto;
+    margin-top: 80px;
+}
+.role .suggest h2{
+    font-size: 55px;
+    color: #333;
+    text-align: center;
+}
+.role .sug_p{
+    width: 631px;
+    height: 77px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    line-height: 43px;
+}
+/* 描述模块 */
+.role .Offset{
+    width: 100%;
+    height: 445.6px;
+    position: relative;
+    
+}
+.role .description{
+    width: 1899px;
+    height: 250px;
+    background-image: linear-gradient(90deg,rgba(42,55,81,0) 0,rgba(42,55,81,.8) 25%,rgba(42,55,81,.8) 75%,rgba(42,55,81,0));
+    background-position: 50%;
+    background-size: 1920px auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -949.5px;
+}
+.role .description_cont{
+    width: 1190px;
+    height: 132.8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -66.4px;
+    margin-left: -595px;
+}
+.role .description_cont h2{
+      font-size: 66px;
+      color: #F0EDF2;
+      text-align: center;
+      padding-left: 64%;
+}
+.role .description_cont p{
+    width: 428.4px;
+    height: 48px;
+    margin-left: 64%;
+    font-size: 16px;
+    color: #F0EDF2;
+    text-align: center;
+}
+/* 轮播显示模块 */
+.Offset .carousel{
+    width: 1190px;
+    height: 445.6px;
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    margin-left: -595px;
+}
+.Offset .carousel .carousel_img{
+    width: 746px;
+    height: 440px;
+    margin-top: 10px;
+}
+.Offset .carousel .carousel_img img{
+    position: absolute;
+    height: 100%;
+    margin-left: 25%;
+}
+
+/* 角色 */
+.role .message{
+    width: 1190px;
+    height: 343.8px;
+    margin: auto;
+}
+.role .message ul{
+    list-style: none;
+    width: 1190px;
+    height: 343.8px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0;
+}
+.role .message ul li{
+    font-size: 14px;
+    display: inline-block;
+    width: 82px;
+    height: 114.6px;
+    border-radius: 5px;
+    text-align: center; 
+    overflow: hidden;
+    transform: skew(25rad) translateX(-5px);
+}
+.role .message li .img_box{
+    width: 70px;
+    height: 78px;
+    margin: auto;
+    background-color: #474646;
+    border-top: 2px solid #F0EDF2;
+    border-bottom: 2px solid #F0EDF2;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+.role .message li img{
+    width: 100%;
+    height: 100%;
+}
+.role .message .message_text{
+    width: 49px;
+    height: 20.8px;
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    transform: skew(0rad) translateX(0px);
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.role .message li .img_box:hover{
+    background-color: #F7931E;
+    transform: scale(1.2);
+}
+/* 立即购买板块 */
+.prepurchase{
+    width: 100%;
+    height: 280px;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.prepurchase .prepurchase_cent{
+    width: 1190px;
+    height: 279px;
+    margin: auto;
+    overflow: hidden;
+}
+.prepurchase .prepurchase_cent .prepurchase_log{
+    width: 680px;
+    height: 370px;
+    background-image: url('../img/bottom.png');
+    position: absolute;
+    right: 0px;
+    top: -90px;
+}
+.prepurchase .prepurchase_cent h2{
+    width: 235px;
+    height: 76px;
+    font-size: 52px;
+    color: #333;
+    margin: auto;
+    margin-top: 50px;
+}
+.prepurchase .prepurchase_cent p{
+    width: 408px;
+    height: 35.2px;
+    margin: auto;
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+.prepurchase .prepurchase_cent .prepurchase_button{
+    width: 148px;
+    height: 38px;
+    background-color: #FF9C00;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 900;
+    margin: auto;
+    margin-top: 20px;
+}
